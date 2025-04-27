@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { getAccessToken } from '../../../lib/auth';
 import MangaStatistics from '../../components/MangaStatistics';
+import FavoriteButton from '../../components/FavoriteButton';
 
 interface MangaDetailPageProps {
   params: {
@@ -67,6 +68,7 @@ export default async function MangaDetail({ params: { id } }: MangaDetailPagePro
     return (
       <div className="max-w-4xl mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">{title}</h1>
+        <FavoriteButton manga={mangaData} />
         {coverUrl && (
           <img
             src={coverUrl}
