@@ -1,6 +1,8 @@
 import './globals.css';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import ThemeToggleButton from './components/ThemeToggleButton';
+
 
 export const metadata: Metadata = {
   title: 'Manga Explorer',
@@ -9,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark:bg-gray-900 bg-white">
-      <body className="min-h-screen flex flex-col font-sans">
+    <html lang="en">
+      <body className="min-h-screen flex flex-col font-sans bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
         <header className="bg-indigo-600 text-white shadow">
           <div className="container mx-auto flex justify-between items-center p-4">
             <h1 className="text-2xl font-semibold">Manga Explorer</h1>
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/favorites" className="hover:underline">
                 Favorites
               </Link>
+              <ThemeToggleButton />
             </nav>
           </div>
         </header>
@@ -41,4 +44,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

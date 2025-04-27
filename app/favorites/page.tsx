@@ -39,9 +39,9 @@ export default function FavoritesPage() {
     <div className="max-w-6xl mx-auto p-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Your Favorite Mangas</h1>
-        <Link href="/" className="text-blue-400 hover:underline text-sm">
+        {/* <Link href="/" className="text-blue-400 hover:underline text-sm">
           ← Go Home
-        </Link>
+        </Link> */}
       </div>
 
       {favorites.length === 0 ? (
