@@ -1,7 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import ThemeToggleButton from './components/ThemeToggleButton';
+
 
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/favorites" className="hover:underline">
                 Favorites
               </Link>
-              <ThemeToggleButton />
+
             </nav>
           </div>
         </header>
