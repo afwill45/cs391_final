@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
 
-      {/* 2) Your existing welcome section */}
+      {/*Your existing welcome section */}
       <section className="text-center py-16">
         <h1 className="text-5xl font-extrabold text-indigo-600 mb-4">
           Welcome to Manga Explorer
